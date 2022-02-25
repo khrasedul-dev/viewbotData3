@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://rasedul20:rasedul20@cluster0.hzttg.mongodb.net/telegramProject?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology:true}).catch((e)=>{
+mongoose.connect('mongodb+srv://rasedul20:rasedul20@cluster0.hzttg.mongodb.net/telegramProject',{useNewUrlParser:true,useUnifiedTopology:true}).catch((e)=>{
         console.log(e)
 }).then((d)=>console.log('Database connected')).catch((e)=>console.log(e))
 
